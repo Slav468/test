@@ -1,27 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	@@include('html/_head.htm',{
-	"title":"forTest"
-	})
+	@@include('html/_head.htm',{ "title":"forTest" })
 	<body>
 		<div class="wrapper">
 			@@include('html/_header.htm',{})
 			<main class="page">
 				<section class="demo">
-					<div class="demo__item demo-item">
-						<h1 class="demo-item__title">Демо-версия</h1>
-						<p class="demo-item__text">За 18 лет деятельности было реализовано более 500 крупных, а так же, не менее 2500 средних и малых проектов. Используя знания и накопленный опыт мы можем предложить </p>
+					<div class="demo__container">
+						<div class="demo__wrapper">
+							<div class="demo__item demo-text">
+								<h1 class="demo-text__title">Демо-версия</h1>
+								<p class="demo-text__text">
+									За 18 лет деятельности было реализовано более 500 крупных, а
+									так же, не менее 2500 средних и малых проектов. Используя
+									знания и накопленный опыт мы можем предложить
+								</p>
 
-						<button class="demo-item__button" type='button'>Попробовать бесплатно <span>
-								<svg>
-									<use xlink:href="@img/icons/icons.svg#arrow-up-right"></use>
-								</svg>
-							</span>
-						</button>
-					</div>
-					<div class="demo__item demo-img">
-						<div class="demo-img__img">
-							<img src="@img/content/demo-img.png" alt="demo image">
+								<button class="demo-text__button" type="button">
+									Попробовать бесплатно
+									<span>
+										<svg>
+											<use
+												xlink:href="@img/icons/icons.svg#arrow-up-right"
+											></use>
+										</svg>
+									</span>
+								</button>
+							</div>
+							<div class="demo__item demo-img">
+								<div class="demo-img__img">
+									<img src="@img/content/demo-img.png" alt="demo image" />
+								</div>
+							</div>
 						</div>
 					</div>
 				</section>

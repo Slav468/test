@@ -1,3 +1,141 @@
 //====================================================================================================
 
+.demo {
+	&__container {
+		padding-top: toRem(36);
+		padding-bottom: toRem(36);
+		@media (max-width: 1300px) {
+			padding: toRem(24);
+		}
+	}
+
+	&__wrapper {
+		display: flex;
+		width: 100%;
+		background-color: var(--bg-primary);
+		border-radius: toRem(10);
+		overflow: hidden;
+		@media (max-width: 1300px) {
+			flex-direction: column;
+		}
+	}
+
+	&__item {
+		display: flex;
+		flex: 1 0 50%;
+		width: 100%;
+	}
+}
+
+.demo-text {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	gap: toRem(18);
+	padding-left: toRem(72);
+	padding-top: toRem(102);
+	padding-bottom: toRem(102);
+
+	@media (max-width: 1440px) {
+		padding: toRem(24);
+	}
+
+	&__title {
+		font-weight: 500;
+		font-size: toRem(30);
+		line-height: 160%;
+		color: var(--bg-secondary);
+		@media (max-width: 1440px) {
+			font-size: toRem(26);
+		}
+		@media (max-width: 768px) {
+			font-size: toRem(20);
+		}
+		@media (max-width: 375px) {
+			font-size: toRem(17);
+		}
+	}
+
+	&__text {
+		max-width: toRem(511);
+		font-weight: 400;
+		font-size: toRem(17);
+		line-height: 160%;
+		color: var(--text-primary);
+
+		@media (max-width: 1300px) {
+			max-width: none;
+		}
+		@media (max-width: 768px) {
+			font-size: toRem(15);
+		}
+		@media (max-width: 375px) {
+			font-size: toRem(13);
+		}
+	}
+
+	&__button {
+		font-weight: 500;
+		font-size: toRem(18);
+		line-height: 160%;
+		color: var(--text-inverse);
+		background-color: var(--bg-inverse);
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: toRem(50);
+		padding: toRem(12) toRem(12) toRem(12) toRem(24);
+		margin-top: toRem(18);
+		border-radius: toRem(60);
+
+		& span {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: toRem(44);
+			height: toRem(44);
+			background: #fff;
+			border-radius: toRem(40);
+			@media (max-width: 768px) {
+				width: toRem(36);
+				height: toRem(36);
+			}
+
+			& svg {
+				color: var(--bg-inverse);
+				width: toRem(24);
+				height: toRem(24);
+			}
+		}
+
+		&:hover {
+			background-color: var(--bg-secondary);
+		}
+
+		@media (max-width: 1300px) {
+			padding: toRem(10) toRem(10) toRem(10) toRem(18);
+			gap: toRem(19);
+		}
+		@media (max-width: 768px) {
+			font-size: toRem(15);
+		}
+	}
+}
+.demo-img {
+	flex: 1 0 44.8%;
+	@media (max-width: 1440px) {
+		flex: 1 0 53%;
+	}
+	&__img {
+		width: 100%;
+		display: flex;
+
+		& img {
+			display: block;
+			width: 100%;
+		}
+	}
+}
+
 //====================================================================================================
