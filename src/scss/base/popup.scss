@@ -1,5 +1,5 @@
 body::after {
-	content: "";
+	content: '';
 	background-color: rgba(0, 0, 0, 0.5);
 	position: fixed;
 	width: 100%;
@@ -47,15 +47,125 @@ body::after {
 	align-items: center;
 }
 .popup__content {
+	display: flex;
+	flex-direction: column;
 	visibility: hidden;
 	transform: scale(0);
 	transition: transform 0.3s ease 0s;
-	background-color: #eee;
-	padding: 20px;
+	background: #f0f4fc;
+	padding: 24px;
 	width: 100%;
-	max-width: 900px;
-	border-radius: 20px;
+	max-width: 500px;
+
 	.lock & {
 		visibility: visible;
+	}
+}
+
+.popup__close {
+	align-self: flex-end;
+	width: toRem(52);
+	height: toRem(52);
+	background: #fff;
+	border-radius: 10px;
+
+	& svg {
+		width: toRem(24);
+		height: toRem(24);
+		color: #000;
+	}
+}
+
+.popup-form {
+	display: flex;
+	flex-direction: column;
+	gap: toRem(18);
+
+	&__title {
+		font-weight: 500;
+		font-size: 24px;
+		color: #323232;
+	}
+
+	&__checkbox {
+		display: flex;
+		gap: toRem(14);
+		margin: toRem(6) 0;
+	}
+
+	&__link {
+		display: flex;
+		width: fit-content;
+		font-weight: 500;
+		font-size: 20px;
+		color: #244c98;
+		margin: toRem(6) 0;
+	}
+
+	&__buttons {
+		display: flex;
+		flex-direction: column;
+		gap: toRem(4);
+		width: 100%;
+		margin-top: toRem(18);
+	}
+}
+.popup-inputs {
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		gap: toRem(4);
+	}
+
+	&__input {
+		border-radius: 10px;
+		padding: 24px;
+		background: #d7e2f6;
+		outline: none;
+		&::placeholder {
+			font-weight: 500;
+			font-size: 18px;
+			color: #1f4284;
+		}
+	}
+}
+
+.popup-checkbox {
+	&__label {
+		font-weight: 400;
+		font-size: 18px;
+		color: #323232;
+	}
+	&__input {
+		display: flex;
+		width: toRem(18);
+		cursor: pointer;
+	}
+}
+
+.button {
+	padding: 0 12px;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 160%;
+	padding: 18px 0;
+	border-radius: 4px;
+
+	&__primary {
+		background: #244c98;
+		color: #fff;
+		&:hover {
+			background-color: var(--bg-secondary);
+		}
+	}
+
+	&__secondary {
+		border: 1px solid #244c98;
+		background: #ffffff;
+		color: #244c98;
+		&:hover {
+			background: #244c98;
+			color: #fff;
+		}
 	}
 }
