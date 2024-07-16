@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>forTest</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20240716095536">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+			</div>
+		</header>
+		<main class="page">
+			<section class="demo">
+				<div class="demo__container">
+					<div class="demo__wrapper">
+						<div class="demo__item demo-text">
+							<h1 class="demo-text__title">Демо-версия</h1>
+							<p class="demo-text__text">
+								За 18 лет деятельности было реализовано более 500 крупных, а
+								так же, не менее 2500 средних и малых проектов. Используя
+								знания и накопленный опыт мы можем предложить
+							</p>
+							<a href="#" data-popup="#popup" class="link demo-text__button">
+								Попробовать бесплатно
+								<span>
+									<svg>
+										<use xlink:href="img/icons/icons.svg#arrow-up-right"></use>
+									</svg>
+								</span>
+							</a>
+						</div>
+						<div class="demo__item demo-img">
+							<div class="demo-img__img">
+								<img src="img/content/demo-img.webp" alt="demo image" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#close"></use>
+					</svg>
+				</button>
+				<div class="popup-content">
+					<form class="popup-content__form popup-form" action='#'>
+						<h2 class="popup-form__title">Войти в систему</h2>
+						<div class="popup-form__inputs popup-inputs">
+							<div class="popup-inputs__wrapper">
+								<label for="login" class="popup-inputs__label"></label>
+								<input type="text" class="popup-inputs__input" name="login" placeholder="Email/Телефон" />
+							</div>
+							<div class="popup-inputs__wrapper">
+								<label for="password" class="popup-inputs__label"></label>
+								<input type="text" class="popup-inputs__input" name="password" type="password" placeholder="Пароль" />
+							</div>
+						</div>
+						<div class="popup-form__checkbox popup-checkbox">
+							<input type="checkbox" class="popup-checkbox__input" />
+							<label class="popup-checkbox__label">Запомнить пароль </label>
+						</div>
+						<a href="#" class="popup-form__link">Восстановить</a>
+						<div class="popup-form__buttons popup-buttons">
+							<button class="popup-buttons__button button button__primary">
+								Войти
+							</button>
+							<button class="popup-buttons__button button button__secondary">
+								Зарегистрироваться
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20240716095536"></script>
+</body>
+
+</html>
