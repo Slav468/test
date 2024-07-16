@@ -53,7 +53,7 @@ body::after {
 	transform: scale(0);
 	transition: transform 0.3s ease 0s;
 	background: #f0f4fc;
-	padding: 24px;
+	padding: toRem(24);
 	width: 100%;
 	max-width: 500px;
 
@@ -67,7 +67,7 @@ body::after {
 	width: toRem(52);
 	height: toRem(52);
 	background: #fff;
-	border-radius: 10px;
+	border-radius: toRem(10);
 
 	& svg {
 		width: toRem(24);
@@ -83,8 +83,8 @@ body::after {
 
 	&__title {
 		font-weight: 500;
-		font-size: 24px;
-		color: #323232;
+		font-size: toRem(24);
+		color: var(--text-accent);
 	}
 
 	&__checkbox {
@@ -97,8 +97,8 @@ body::after {
 		display: flex;
 		width: fit-content;
 		font-weight: 500;
-		font-size: 20px;
-		color: #244c98;
+		font-size: toRem(20);
+		color: var(--bg-inverse);
 		margin: toRem(6) 0;
 	}
 
@@ -133,8 +133,8 @@ body::after {
 .popup-checkbox {
 	&__label {
 		font-weight: 400;
-		font-size: 18px;
-		color: #323232;
+		font-size: toRem(18);
+		color: var(--text-accent);
 	}
 	&__input {
 		display: flex;
@@ -144,28 +144,28 @@ body::after {
 }
 
 .button {
-	padding: 0 12px;
+	padding: 0 toRem(12);
 	font-weight: 500;
-	font-size: 18px;
-	line-height: 160%;
-	padding: 18px 0;
-	border-radius: 4px;
+	font-size: toRem(18);
+	line-height: 1.6;
+	padding: toRem(18) 0;
+	border-radius: toRem(4);
 
 	&__primary {
-		background: #244c98;
-		color: #fff;
+		background: var(--bg-inverse);
+		color: var(--text-inverse);
 		&:hover {
 			background-color: var(--bg-secondary);
 		}
 	}
 
 	&__secondary {
-		border: 1px solid #244c98;
-		background: #ffffff;
-		color: #244c98;
+		border: 1px solid var(--bg-inverse);
+		background: var(--text-inverse);
+		color: var(--bg-inverse);
 		&:hover {
-			background: #244c98;
-			color: #fff;
+			background: var(--bg-inverse);
+			color: var(--text-inverse);
 		}
 	}
 }
